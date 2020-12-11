@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+I had to add a defer to index.js in html file so index.js will not run until after the page has been loaded.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Used console in the browser to test and copied to vs code
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+not sure but maybe we can access data.js beacuse it's also javascript file :)
 ```
 ___________
 
@@ -89,6 +89,8 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+
+spend a lot of time figuring this one out
 
 ```
 
@@ -110,5 +112,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+didn't have time to finish the last deliverable
 
 ```
