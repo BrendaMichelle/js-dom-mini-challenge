@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Added defer to index.js, so index.js loads after the html is populated on the document
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+call style and color operator on header, set equal to color
 ```
 ___________
 
@@ -71,6 +71,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+Can acces data.js because it's in same file directory, or maybe because of
+<script src="data.js"></script> in index.html? Not sure
+
 
 ```
 ___________
