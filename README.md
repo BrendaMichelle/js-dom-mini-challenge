@@ -47,7 +47,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Add defer to <script> in HTML.index, so file can run body before JS
+Change header to "h1#header" for more specificity 
 ```
 ___________
 
@@ -57,7 +58,11 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+access using dot notation
+header.style.color 
+GIVE MORE VISIBILITY
+use console.dir(header.style) to see what options have to change background
+header.style.backgroud 
 ```
 ___________
 
@@ -71,6 +76,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+data.js is loaded on index.html via <script> on the line before index.js (which is also deferred to the end), so we have access to it's data 
+use querySelector to find specific elements (correct word?) for name, nickname, and photo
+separate src and alt in photo 
 
 ```
 ___________
@@ -89,7 +97,8 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+.forEach loop to create li elements?
+This one I think I need more practice with before I can do with any confidence 
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
