@@ -41,24 +41,20 @@ ___________
 
 ## Deliverable 1
 
-Open the `index.html` file in your browser and check the console in Chrome Dev Tools. You'll notice the console.log from line 2 of the `index.js` file is returning `null` instead of showing the `h1#header` element.
+<!-- Open the `index.html` file in your browser and check the console in Chrome Dev Tools. You'll notice the console.log from line 2 of the `index.js` file is returning `null` instead of showing the `h1#header` element.
 
 Figure out what you need to change to give Javascript access to the `h1#header` element.
 
 **YOUR NOTES**
-```
-
-```
+I put a defer in my index.js script tag and it worked! -->
 ___________
 
 ## Deliverable 2
-
+<!-- 
 Now that you have access to the `h1#header` element, use Javascript to change the element's font color to your favorite color.
 
 **YOUR NOTES**
-```
-
-```
+I just took the header variable and accessed its style and color to change to green. -->
 ___________
 
 ## Deliverable 3
@@ -70,9 +66,7 @@ First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to
 Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
 
 **YOUR NOTES**
-```
-
-```
+Okay, I TOTALLY misread this Deliverable, and thought I was adding data... and then i thought there was more than one traveler and got really confused after i wrote everything out. I am going to work on this over the weekend....
 ___________
 
 ## Deliverable 4
