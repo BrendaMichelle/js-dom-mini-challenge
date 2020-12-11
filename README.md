@@ -47,6 +47,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+- the selector for document.querySelector should contain the tag and then the id.
+- add defer attribute to index.js script
 
 ```
 ___________
@@ -57,7 +59,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+- change color using style attribute
+- favorite color is green!
 ```
 ___________
 
@@ -71,6 +74,21 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+-I'm not certain why index.js can access the object in data.js but I think it's because its in the same layer of the directory and both same file extensions? 
+
+- target traveler's profile info and store in variable 
+
+show image
+- target traveler's img and store in variable
+- change src and alt of variable
+
+show name
+- target traveler's name and store in variable
+- change textContent of variable
+
+show nickname
+- target traveler's nickname and store in variable
+- change textContent of variable
 
 ```
 ___________
@@ -89,6 +107,13 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+- target ul that will contain list of all animal sightings
+- target data.js object for animal sightings
+- create outside of function first to test in console then add to function
+  - create needed elements
+  - assign attributes
+  - structure elements accordingly by adding innermost element to its relative parent
+- wanted to try this with setting it as a separate function to call instead of using anonymous function but I guess I"m not callback confident yet :(
 
 ```
 
@@ -110,5 +135,9 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+- target the specific li with data-id='3' 
+- test in console to see if its the right element
+- remove() on element
+- the docs really helped especially the second link
 
 ```
