@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Wrote in Defer in the script tags 
 ```
 ___________
 
@@ -57,6 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+found element by id and changed color using style. 
 
 ```
 ___________
@@ -71,7 +72,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+used textContent to uodate the text and setAttribute to update picture 
 ```
 ___________
 
@@ -89,7 +90,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Created all the elements and then updated each one with a foreach loop and appended together.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
