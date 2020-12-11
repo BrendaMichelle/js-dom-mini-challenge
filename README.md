@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+The JS was being called before the HTML was run, needed to defer the running of JS until the HTML finished running.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+color is avail in the style method 
 ```
 ___________
 
@@ -71,7 +71,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+I can access the data.js files traveller variable because index.html runs it before it runs index.js
+Storing the tags to be changed in variables and then changing the text content with the traveler object
 ```
 ___________
 
