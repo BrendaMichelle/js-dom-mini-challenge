@@ -89,6 +89,12 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+  <li data-id="{animalSighting id}">
+    <p>{animal sighting description}</p>
+    <img src="{animal sighting photo}" alt="{animal sighting species}"/>
+    <a href="{animal sighting link}
+    " target="_blank">Here's a video about the {animal sighting species} species!</a>
+</li> */}
 
 ```
 
