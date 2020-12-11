@@ -22,7 +22,8 @@ profilediv.querySelector('img').alt = traveler.name
 const sightings = traveler.animalSightings
 
 
-    
+let ul = document.querySelector('ul#animals')
+
 
 
 sightings.forEach(function (sighting) {
@@ -31,9 +32,8 @@ sightings.forEach(function (sighting) {
     let img = document.createElement('img')
     let a = document.createElement('a')
 
-    li.id = "data-id"
+    li.setAttribute('data-id', `${sighting.id}`)
 
-    let ul = document.querySelector('ul#animals')
     ul.append(li)
     li.append(p, img, a)
 
@@ -47,3 +47,6 @@ sightings.forEach(function (sighting) {
 })
 
 /***** Deliverable 5 *****/
+
+// ul.children[2].remove()
+ul.querySelector('[data-id="3"]').remove()
