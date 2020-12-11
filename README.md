@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+needed to add 'defer' to the script in the head in the html file
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+access the style and color attributes of an html tag and set color to green
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+got the img, h2, and em elements within the profile div and set their attributes to traveler's
 ```
 ___________
 
@@ -89,6 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+wrote a function to create the li and it's p, img, and a children and then add the li to the ul#animals. then ran that function with forEach on the animalSightings array.
 
 ```
 
@@ -110,5 +111,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+grabbed the li by it's data id and ran the remove function on it
 ```
