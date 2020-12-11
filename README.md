@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+The DOM has to be loaded before JavaScript code kicks in. This is why defer is required in the script tags. 
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+I used console.dir(header) to figure out the object's attributes that I can modify. I notified "style" which correlates to CSS/HTML and selected "color". To access that attribute simply call header.style.color update the value to another color. 
 ```
 ___________
 
@@ -112,3 +112,4 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 ```
 
 ```
+
