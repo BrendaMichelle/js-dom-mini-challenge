@@ -47,6 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+<!-- remember to add 'defer' to the script tag so that all of the html runs before fs does  -->
 
 ```
 ___________
@@ -57,7 +58,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+<!-- now that we've located the element, we can call .style and .color and change it -->
 ```
 ___________
 
@@ -71,7 +72,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+<!-- locate the elements you want to update and assign them variables using querySelector, from there edit the element you want to update with .textContent, etc and the new element info -->
 ```
 ___________
 
