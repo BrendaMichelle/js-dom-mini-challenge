@@ -5,6 +5,7 @@ console.log("Here's your header:", header)
 
 /***** Deliverable 2 *****/
 
+header.style.color = "blue"
 
 
 /***** Deliverable 3 *****/
