@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Added defer to <script src+"index.js"></script>
 ```
 ___________
 
@@ -57,7 +57,10 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+find header
+find style
+find color
+header.style.color
 ```
 ___________
 
@@ -71,7 +74,12 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+locate where name is meant to be put in index.html
+create name variable 
+set equal to document.querySelector("h2")
+name.textContent = traveler.name (info found in data.js)
 
+img.src
 ```
 ___________
 
