@@ -19,5 +19,31 @@ profilediv.querySelector('img').alt = traveler.name
 /***** Deliverable 4 *****/
 
 
+const sightings = traveler.animalSightings
+
+
+    
+
+
+sightings.forEach(function (sighting) {
+    let li = document.createElement('li')
+    let p = document.createElement('p')
+    let img = document.createElement('img')
+    let a = document.createElement('a')
+
+    li.id = "data-id"
+
+    let ul = document.querySelector('ul#animals')
+    ul.append(li)
+    li.append(p, img, a)
+
+    p.innerText = sighting.description
+    img.src = sighting.photo
+    img.alt = sighting.species 
+    a.href = sighting.link
+    a.target = "_blank"
+    a.innerText = `Here's a video about the ${sighting.species} species!`
+    
+})
 
 /***** Deliverable 5 *****/
