@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+'defer' needed to be added to the <script> tag to let the HTML file run before loading index.js. also, added .textContent to display the text of the header.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+.style.color accepts a string of the color you want to change to, i.e. "red"
 ```
 ___________
 
@@ -71,7 +71,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+1. find the elementusing element.querySelector/save that element to a variable.
 
+2. update saved variable by using traveler.name, etc
 ```
 ___________
 
@@ -89,7 +91,9 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+1. create an element in the parent document
+2. add the attributes that you want the elements to have
+3. find where on the page we're appending them to and add them in the correct order - child appends to parent
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +114,9 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+1. find the element 
+2. element.remove()
+
+note - i had to do some research about the data-id attribute. does it just go by id? i think that when you use data-id, JS thinks you're saying "data <minus> id"
 
 ```
