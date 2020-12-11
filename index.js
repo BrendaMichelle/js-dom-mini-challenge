@@ -37,12 +37,15 @@ nickname.textContent = traveler.nickname;
 /***** Deliverable 4 *****/
 
 traveler.animalSightings.forEach(function (sightingsObj) {
+
 let animals = document.querySelector("ul#animals")
 //console.log(animals)
 let li = document.createElement('li')
 let p = document.createElement('p')
 let img = document.createElement('img')
 let a = document.createElement('a')
+
+li.setAttribute('data-id', `${sightingsObj.id}`)
 
 li.id = sightingsObj.id 
 p.textContent = sightingsObj.description
@@ -65,6 +68,6 @@ animalSighting.append(li)
 
 /***** Deliverable 5 *****/
 
-let mistake = document.getElementById('3');
+let mistake = document.querySelector('[data-id="3"]').remove();
 // console.log(mistake);
 mistake.remove();
