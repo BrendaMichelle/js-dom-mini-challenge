@@ -36,6 +36,8 @@ traveler.animalSightings.forEach(function (sighting){
 
 /***** Deliverable 5 *****/
 
+
+
 let unwantedAnimal = document.querySelector("[data-id='3']")
 unwantedAnimal.remove()
 
