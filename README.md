@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+I added defer to the script for index.js so it runs after the DOM is created
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+called the style operator which accessed the css and the called color operator and set the color to sky blue. REMEMBER to put color in quotes
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+I tried playing around with the order of the scripts in index.html and it seems that as long as data.js is ran before index.js, index.js will have access to the variables in data.js.
 ```
 ___________
 
