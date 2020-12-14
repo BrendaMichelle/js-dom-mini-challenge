@@ -24,6 +24,7 @@ nicknameUpdate.textContent = traveler.nickname
 
 /***** Deliverable 4 *****/
 animalSightingsArr = traveler.animalSightings
+let animalSightingList = document.querySelector('ul#animals')
 
 animalSightingsArr.forEach(function (sightingObj){
     let liTag = document.createElement('li')
@@ -39,7 +40,7 @@ animalSightingsArr.forEach(function (sightingObj){
     aTag.target = "blank"
     aTag.textContent = `Here's a video about the ${sightingObj.species} species!`
 
-    let animalSightingList = document.querySelector('ul#animals')
+    
 
     liTag.append(pTag, imgTag, aTag)
     animalSightingList.append(liTag)
