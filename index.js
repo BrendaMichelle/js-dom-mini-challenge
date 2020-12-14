@@ -32,4 +32,4 @@ li.innerHTML = `
 traveler.animalSightings.forEach(addSighting)
 
 
-/***** Deliverable 5 *****/
+/***** Deliverable 5 *****s/
