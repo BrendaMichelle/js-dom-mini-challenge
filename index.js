@@ -37,6 +37,7 @@ traveler.animalSightings.forEach(function(obj){
 
     const a = document.createElement("a")
     a.href = obj.link 
+    a.textContent = `Here's a video about the ${obj.species} species!`
 
     li.append(p, img, a)
     list.append(li)
