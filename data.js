@@ -1,4 +1,4 @@
-const traveler = [{
+const traveler = {
   id: 1,
   name: "Raffy",
   nickname: "Rafferty",
@@ -38,4 +38,4 @@ const traveler = [{
       description: "What a sight!"
     }
   ]
-} ]
+} 

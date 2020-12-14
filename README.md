@@ -66,7 +66,7 @@ First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to
 Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
 
 **YOUR NOTES**
-Okay, I TOTALLY misread this Deliverable, and thought I was adding data... and then i thought there was more than one traveler and got really confused after i wrote everything out. I am going to work on this over the weekend....
+UPDATE: I redid this section and updated the content. I found the traveler div, then found the appropriate tags to update and added raffy's information.
 ___________
 
 ## Deliverable 4
@@ -83,6 +83,11 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+First, grab the array of animal sightings in traveler data.
+
+1 -  to create the elements we need.
+2 - Add their attributes
+3 - Append to each other and to  ul#animalsightings
 
 ```
 
@@ -104,5 +109,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Had to find the item we wanted to remove and add the .remove() method!
 ```
