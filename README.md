@@ -46,7 +46,7 @@ Open the `index.html` file in your browser and check the console in Chrome Dev T
 Figure out what you need to change to give Javascript access to the `h1#header` element.
 
 **YOUR NOTES**
-```
+```Moved script tag to bottom
 
 ```
 ___________
@@ -70,7 +70,7 @@ First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to
 Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
 
 **YOUR NOTES**
-```
+```You can access traveler object from data.js file in index.js file becaues index.js inherits from data.js? 
 
 ```
 ___________
@@ -89,6 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+Remember to use interpolation
 
 ```
 
