@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+The script tag to the 'index.js' file is placed in the header of the html file.before the body. So to avoid running it before raeaching the rest of the html, I injected defer in its script tag. 
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+used the const 'header' to apply the color of the style.
 ```
 ___________
 
@@ -71,7 +71,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+- We could access the traveler object data because of the script tag in the html file. Also because it is defined as a global variable.
+- I prefered to scope all the attributes first.
+- I looked for profile, then I used it to look for the image, name, and nickname.
 ```
 ___________
 
@@ -89,6 +91,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+Did not have enough time 😕
 
 ```
 
@@ -110,5 +113,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Did not have enough time 😕
 ```
