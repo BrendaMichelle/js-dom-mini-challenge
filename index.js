@@ -54,6 +54,7 @@ traveler.animalSightings.forEach(function (animalObject){
         newImg.alt = animalObject.species
     const newLink = document.createElement("a")
         newLink.href = animalObject.link
+        newLink.target = "_blank"
         newLink.textContent = `Here's a video about the ${animalObject.species} species!`
 
     // creates the HTML for each list item
