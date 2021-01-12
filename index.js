@@ -1,28 +1,27 @@
-/***** Deliverable 1 *****/
+
+//D1
 const header = document.querySelector("#header")
-console.log("Here's your header:", header)
+console.log("Here's your header: ", header)
 
-/***** Deliverable 2 *****/
+//D2
+header.style.color = "green"
 
-header.style.color = "Blue"
+//D3
+let travelerObj = document.querySelector(".traveler #profile")
+console.log("this is what the traveler obj looks like", travelerObj)
 
-/***** Deliverable 3 *****/
+let h2 = document.querySelector("#profile .name")
+h2.textContent = traveler.name
+console.log(h2)
 
-console.log('This is what the traveler object looks like: ', traveler)
+let em = document.querySelector("#profile .nickname")
+em.textContent = traveler.nickname
 
 let img = document.querySelector("#profile .photo")
-//img.textContent = traveler.photo
 img.src = traveler.photo
 img.alt = traveler.name
 
-let h2 = document.querySelector('#profile .name')
-h2.textContent = traveler.name
-
-let em = document.querySelector('#profile .nickname')
-em.textContent = traveler.nickname
-
-// /***** Deliverable 4 *****/
-
+//D4
 const allAnimalSightings = traveler.animalSightings
 let animalSightingList = document.querySelector('#animals')
 
@@ -32,35 +31,10 @@ animalSightingList.innerHTML += `
   <p>${animal.description}</p>
   <img src="${animal.photo}" alt="${animal.species}"/>
   <a href="${animal.link}" target="_blank">Here's a video about the ${animal.species} species!</a>
-</li>`
-  
+  </li>`
 }) 
 
-/***** Deliverable 5 *****/
+// /***** Deliverable 5 *****/
 
 const lineItem3 = document.querySelector("li[data-id='3']") 
 lineItem3.remove()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// animalSightingList.querySelector([data-id='3']).remove()
-// couldnt get this one to work i think i need more Setup ... didnt have enough time will work on again
