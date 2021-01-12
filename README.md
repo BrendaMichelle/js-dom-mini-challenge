@@ -47,7 +47,9 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+The defer keyword will allow the page to load before 
+running the script. Alternatively, the <script> tag 
+could be placed at the bottom of the html page
 ```
 ___________
 
@@ -57,7 +59,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Because the #header element was saved to a variable, 
+I was able to modify the style of the element with the .style method (not sure if style is technically a "method").
 ```
 ___________
 
@@ -71,7 +74,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+Once I found the desired elements to change using querySelector, I was able to change its attributes 
+using dot notation. The data was string interpolated 
+to keep my code flexible. 
 ```
 ___________
 
@@ -89,7 +94,10 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Using a forEach to iterate over the animalSightings array,
+I was able to 1) create the desired elements, 2) modify the 
+attributes of those new elements, 3) establish the relationship
+between the new elements, and 4) slap them on the DOM
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +118,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+After finding the li element with the data-id, that
+element is removed with the .remove() method.
 ```
