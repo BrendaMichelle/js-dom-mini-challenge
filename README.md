@@ -47,6 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+The <script> tag holding the src to index.js should defer or be place at the bottom of the <body> tag
 
 ```
 ___________
@@ -57,6 +58,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+1. Select element to style, which is done in deliverable one with 'header 
+2. User the .style.color chain to set the color of the element's content to blue
 
 ```
 ___________
@@ -71,6 +74,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+- data.js is contained within a <script> tag inside the <head> of index.html, giving the html file access to it when it reads the index.js file at the end of the <body> tag
+- identify where the new information should go, select those elements and replace the content.
+- I went the long way and added a 'new profile' so then went back and removed the existing elements before adding a new profile
 
 ```
 ___________
@@ -89,6 +95,9 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+- identify where this information should go
+- create variable that accesses the animal sightings within the traveler object
+- I think I could have created a function that would create the elements and assign there attributes then used that function inside the forEach loop that was used on animalSightings
 
 ```
 
@@ -110,5 +119,7 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+- identify the item we want to remove using unique ID
+- invoke .remove() on that element
 
 ```
