@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+The script tag needed to be deferred till the HTML file was completely loaded. 
 ```
 ___________
 
@@ -57,6 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+Selected the element and went into the directory to find the style attributes. 
 
 ```
 ___________
@@ -71,7 +72,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+The reason why you can utilize the traveler object is because data.js is linked via the HTML file. 
 
+I selected all of the elements that needed to be updated and slapped the new information using the traveler object's attributes. 
 ```
 ___________
 
