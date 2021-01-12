@@ -48,6 +48,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 **YOUR NOTES**
 ```
 
+I added 'defer' to the script tag so the js file loads after the HTML is finished being read.
+
 ```
 ___________
 
@@ -57,6 +59,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+
+I used header.style.color = "blue" to change the color of the element's font.
 
 ```
 ___________
@@ -71,6 +75,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+
+I assigned the relevant elements to variables and changed their information by using data from the traveler object. I would have iterated, but since there is no array of objects, and there is only 1 traveler, I opted to directly use the objects data to update page elements.
 
 ```
 ___________
@@ -89,6 +95,8 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+
+I iterated through the array of animal sightings and for each sighting I created a new li with with nested elements using data from each sighting, and then appended the new li to the existing animals ul.
 
 ```
 
@@ -110,5 +118,7 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+
+I used querySelector to find the bad li element, saved it to a variable, then called the .remove() method on it.
 
 ```
