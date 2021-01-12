@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+I added "defer" to the js script tag in the HTML file, so that my HTML actually ran before my js tried to access it
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+I used dot notation to access the style attribute on the header node, and updated its color value to white.
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+I assigned variables to each of the HTML nodes that I wanted to update, then I accessed each of them and ressigned their content with relevant values from the traveler object.
 ```
 ___________
 
@@ -89,6 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+Used the artisanal way to first create new elements, then add attributes to new elements, then add relationships between new elements, then slap to the DOM!
 
 ```
 
@@ -110,5 +111,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Ran out of time to finish this!
 ```
