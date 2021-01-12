@@ -49,6 +49,6 @@ animalList.append(li)
 })
 
 /***** Deliverable 5 *****/
-let wrongPic = document.getElementById('3')
-
+// let wrongPic = document.getElementById('3')
+let wrongPic = document.querySelector("li[id='3']")
 wrongPic.remove()
