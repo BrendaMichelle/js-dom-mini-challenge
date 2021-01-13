@@ -91,7 +91,10 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-Did not have enough time 😕
+using the artisanal way
+-for each animal sightings- created the element structure. Then, I added the attributes to each corresponding element. 
+-the relationships setup using .append
+-Dom placement using .append 
 
 ```
 
@@ -113,5 +116,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-Did not have enough time 😕
+looked for liS in the ul using the 'li[data-id='3']`
+used function remove()
 ```
