@@ -23,19 +23,31 @@ newNickName.textContent = traveler.nickname
 
 /***** Deliverable 4 *****/
 
+const ul = document.querySelector('ul#animals')
 
-animals.forEach(function(post){
-    post.innerHTML +=
-    `
-    <li data-id="{animalSighting id}">
-        <p>{animal sighting description}</p>
-        <img src="{animal sighting photo}" alt="{animal sighting species}"/>
-        <a href="{animal sighting link}" target="_blank">Here's a video about the {animal sighting species} species!</a>
-    </li>
-    `
+traveler.animalSightings.forEach(function (animal){
+    let newLi = document.createElement('li')
+    newLi.dataset.id = animal.id
+
+    let newP = document.createElement('p')
+    newP.textContent = animal.description
+
+    let newImg = document.createElement('img')
+    newImg.src = animal.photo
+    newImg.alt = animal.species
+    
+    let newLink = document.createElement('a')
+    newLink.href = animal.newLink
+    newLink.target = "_blank"
+    newLink.textContent = `Here's a video about the ${animal.species} species!`
+
+    newLi.append(newP, newImg, newLink)
+
+    ul.append(newLi)
 
 
-    })
+})
+
 
 
 
