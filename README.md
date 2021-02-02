@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+added defer keyword inside script tag to allow html to render before running javascript code which references the html.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+call previous declared header variable, use the style method then color method and set equal to a cool color
 ```
 ___________
 
@@ -71,7 +71,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+Can access data.js file from index.js because it is linked in a script tag in index.html right before index.js. 
+Find attributes using querySelector, then update then with appropriate info found in traveler object.
 ```
 ___________
 
@@ -89,7 +90,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Iterate over animalSighting data using forEach to create a new div with inner HTML to assign places to output sighting attributes then append created objects to an appropriate element.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +111,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Find element to remove using querySelector and inputting data-id. Assign to a variable then call remove to delete.
 ```
