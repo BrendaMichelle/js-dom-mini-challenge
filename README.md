@@ -1,12 +1,8 @@
-# JS Fundamentals Assessment
-
-*This Lab Lovingly Stolen From [Ian Hollander](https://github.com/ihollander)*
+# JS Mini Challenge: DOM Manipulation
 
 ## Instructions
 
-Fork this repo, then run `git clone` to download it locally. Then `cd` into the downloaded directory and open it in your text editor with `code .`.
-
-Open the `index.html` file in the browser, and open the developer tools in the browser so you can see the console. You will be writing your code in the `index.js` file. As you write your code, uncomment the lines below each question to test your code. Any time you make changes in the `index.js` file, you'll need to refresh the page to see the your changes in the console.
+Fork this repo, then run `git clone` to download your fork locally. Then `cd` into the downloaded directory and open it in your text editor with `code .`.
 
 ## Submitting
 
@@ -18,244 +14,101 @@ git commit -m 'Done'
 git push
 ```
 
-To get feedback on your code, make a [pull request from your forked repo](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+To get feedback on your code, make a [pull request from your forked repo](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork). If you worked with a partner, you can tag your partner on the pull request.
+
+_______
 
 ## Assignment
 
-This assessment is meant to give you a chance to practice with the key skills you're expected to know as we go along. The topics you should focus on are listed out below. It's not expected that you will have mastered all these skills yet, but completing this assessment will help us learn how to best focus out time instructing the class as a whole and also how to help each student individually.
+Today, we'll be building a prototype of a small application about Raffy's trip to the Amazon Rainforest. If you're so inclined to do so, feel free to change the data and personalize your app!
 
-### Question 1
+There's a section in this Readme file for your notes on each deliverable. As you go through the deliverables, write down some notes in this file on how you solved each problem. It'll help reinforce what you learned and give you a head start next time you see a similar problem.
 
-Create a variable called `counter` and assign it to a value of 1. Then, on a new line, *reassign* the value of `counter` to 2.
+A note on notation: when you see an element like `h1#header` in the Readme, that refers to the element's tag name and the CSS selector. For example, `h1#header` looks like this in the HTML:
+
+```html
+<h1 id="header">Some text here</h1>
+```
+
+And `div.traveler` looks like this (note the CSS class selector syntax):
+
+```html
+<div class="traveler">
+  <!-- child elements here -->
+</div>
+```
+___________
+
+## Deliverable 1
+
+Open the `index.html` file in your browser and check the console in Chrome Dev Tools. You'll notice the console.log from line 2 of the `index.js` file is returning `null` instead of showing the `h1#header` element.
+
+Figure out what you need to change to give Javascript access to the `h1#header` element.
+
+**YOUR NOTES**
+```
+
+```
+___________
+
+## Deliverable 2
+
+Now that you have access to the `h1#header` element, use Javascript to change the element's font color to your favorite color.
+
+**YOUR NOTES**
+```
+
+```
+___________
+
+## Deliverable 3
+
+Now that we've got a beautiful header, we can show some traveler data on the page. The traveler data is stored in a variable called `traveler` in the `data.js` file - you can still access that variable in your `index.js` file (see if you can figure out why!).
+
+First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to see the data in the console. 
+
+Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
+
+**YOUR NOTES**
+```
+
+```
+___________
+
+## Deliverable 4
+
+We also want to show some of the awesome animal sightings our traveler had. You'll notice that within the `traveler` object, there's an `animalSightings` property that contains an array of animal sighting data. *For each* of the animal sightings, create a DOM element that looks like this and add it to the `ul#animals`:
 
 ```js
-console.log(counter) 
-// => 2
+<li data-id="{animalSighting id}">
+  <p>{animal sighting description}</p>
+  <img src="{animal sighting photo}" alt="{animal sighting species}"/>
+  <a href="{animal sighting link}" target="_blank">Here's a video about the {animal sighting species} species!</a>
+</li>
 ```
 
-### Question 2
-
-Create a variable called `name` and assign it to a value of your name. You *should not* be able to reassign the variable after it has been created.
-
-```js
-// attempting to reassign should throw an error
-name = "Not Raffy" 
-// => TypeError
+**YOUR NOTES**
 ```
 
-### Question 3
-
-Convert this Ruby method into a Javascript function. Follow Javascript syntax and naming conventions for your function.
-
-```rb
-def drink_water(current_thirst_level)
-  puts "Man I sure am thirsty"
-  current_thirst_level -= 1
-  puts "Ahh that hits the spot"
-  current_thirst_level
-end
 ```
 
-Testing Code:
+**NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
 
-```js
-console.log(drinkWater(12))
-// => "Man I sure am thirsty"
-// => "Ahh that hits the spot"
-// => 11
+For more info on `data-*` attributes, have a look at this [MDN article on using dataset attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+
+___________
+
+## Deliverable 5
+
+Ruh-oh! Another traveler's animal sighting has snuck into our list. While it's certainly a great sighting, it doesn't belong on the list with the rest of Raffy's animal sightings. 
+
+Since you gave each `<li>` a `data-id` attribute in the last deliverable, we can use that information to find the animal sighting we're looking for. 
+
+Use Javascript to find the element with the `[data-id='3']` attribute, and *remove* that element from the page.
+
+> Hint: You can use `querySelector` with [CSS Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) to find an element with a specific data-id. 
+
+**YOUR NOTES**
 ```
 
-### Question 4
-
-Write a function `sameSameButDifferent` that takes in two arguments, `num` and `maybeNum`. If `num` and `maybeNum` are both numbers, and the same value, it should return `"same same"`. If `num` is the same value as `maybeNum` after converting `maybeNum` to a number, it should return `"same same (but different)"`. Otherwise, it should return `"different"`.
-
-```js
-console.log(sameSameButDifferent(5, 5)) 
-// => "same same"
-
-console.log(sameSameButDifferent(123, "123")) 
-// => "same same (but different)"
-
-console.log(sameSameButDifferent(5, 7)) 
-// => "different"
-
-console.log(sameSameButDifferent(123, "122")) 
-// => "different"
-```
-
-### Question 5
-
-Write a function `updateGrade` that takes two arguments: a `student` (object), and a `grade` (number). Calling this function should update the grade property on the `student` object to be the value of the `grade` argument.
-
-```js
-const student1 = { name: "Duane", grade: 88 }
-
-updateGrade(student1, 92)
-
-console.log(student1)
-// => { name: "Duane", grade: 92 }
-```
-
-### Question 6
-
-Convert this Ruby code into its Javascript equivalent. Follow Javascript syntax and naming conventions for your function.
-
-```rb
-def print_name_and_phones(users)
-  users.each do |user_hash|
-    puts user_hash[:name]
-    puts "Cell: #{user_hash[:phones][:cell]}"
-    puts "Office: #{user_hash[:phones][:office]}"
-  end
-end
-
-users = [
-  { 
-    name: "Duane",
-    phones: {
-      cell: "555-123-4567",
-      office: "555-456-7890",
-    }
-  },
-  {
-    name: "Liza",
-    phones: {
-      cell: "555-234-5678",
-      office: "555-567-1234"
-    }
-  }
-]
-
-print_name_and_phones(users)
-# => "Duane"
-# => "Cell: 555-123-4567"
-# => "Office: 555-456-7890"
-# => "Liza"
-# => "Cell: 555-234-5678"
-# => "Office: 555-567-1234"
-```
-
-### Callbacks
-
-The function `myMap` takes in two arguments: an array, and a callback function. `myMap` will return a new array by calling the callback function with each element of the array. 
-
-```js
-function myMap(array, callback) {
-  const result = []
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i]
-    const value = callback(element)
-    result.push(value)
-  }
-  return result
-}
-```
-
-You should not change any code inside the `myMap` function to get the following questions to work.
-
-### Callbacks - Question 1
-
-Write a function `triple` to be used as a callback function with the `myMap` function, so that calling `myMap` with an array of numbers and your `triple` function will return a new array with each value from the original array tripled.
-
-```js
-console.log(myMap([1,2,3,4,5], triple)) 
-// => [3,6,9,12,15]
-
-console.log(myMap([2,4,6,8], triple))   
-// => [6,12,18,24]
-```
-
-### Callbacks - Question 2
-
-Write a function `greet` to be used as a callback function with the `myMap` function, so that calling `myMap` with an array of names and your `greet` function will return a new array with a greeting for each name.
-
-```js
-console.log(myMap(["Raffy", "Chase"], greet)) 
-// => ["Hi, Raffy!", "Hi, Chase!"]
-```
-
-### Scope & Closures
-
-You may remember these functions from the old Deli Counter lab. The `takeANumber` function takes in two arguments: a `line` (array) and a `name` (string), adds the name to the end of the line, and returns a welcome message (string). The `nowServing` function takes a `line` (array); if the line is empty, it returns a message, if it's not empty, it removes the first customer from the line and returns a message.
-
-```js
-function takeANumber(line, name) {
-  line.push(name)
-
-  return `Welcome, ${name}. You are number ${line.length} in line.`
-}
-
-function nowServing(line) {
-  if (!line.length) {
-    return "There is nobody waiting to be served!"
-  }
-  return `Currently serving ${line.shift()}.`
-}
-
-const line = []
-
-console.log(takeANumber(line, "Loren"))
-// => `Welcome, Loren. You are number 1 in line.`
-
-console.log(takeANumber(line, "Liza"))
-// => `Welcome, Liza. You are number 2 in line.`
-
-console.log(nowServing(line))
-// => `Currently serving Loren.`
-
-console.log(nowServing(line))
-// => `Currently serving Liza.`
-```
-
-### Scopes & Closures - Question 1
-
-Create a `takeATicketNumber` function that will replace the `takeANumber` function. It only takes in one argument, a `line` (array). Instead of working with names, we'll have it work with ticket numbers. Calling `takeATicketNumber` should do two things:
-
-- Add a ticket number to the line (starting with ticket number 1)
-- Return a message `"Welcome. You are ticket number 1"`
-
-You will need to create a new variable to solve this; think about where that variable should be in terms of *scope*. You should not have to change the `nowServing` function.
-
-```js
-const line = []
-
-console.log(takeATicketNumber(line))
-// => `Welcome. You are ticket number 1`
-
-console.log(takeATicketNumber(line))
-// => `Welcome. You are ticket number 2`
-
-console.log(nowServing(line))
-// => `Currently serving 1.`
-
-console.log(nowServing(line))
-// => `Currently serving 2.`
-
-console.log(takeATicketNumber(line))
-// => `Welcome. You are ticket number 3`
-```
-
-### Scopes & Closures - Question 2 (BONUS)
-
-Try to solve the problem above using a higher order function, and without using a global variable for the ticket number. Write a higher order function called `ticketNumberGeneratorFunc` that returns a nested `takeATicketNumber` function. The other functionality should remain the same. 
-
-```js
-const newLine = []
-
-const takeATicketNumberFunc = ticketNumberGeneratorFunc()
-
-console.log(takeATicketNumberFunc(newLine))
-// => `Welcome. You are ticket number 1`
-
-console.log(takeATicketNumberFunc(newLine))
-// => `Welcome. You are ticket number 2`
-
-console.log(nowServing(newLine))
-// => `Currently serving 1.`
-
-console.log(nowServing(newLine))
-// => `Currently serving 2.`
-
-console.log(takeATicketNumberFunc(line))
-// => `Welcome. You are ticket number 3`
 ```
