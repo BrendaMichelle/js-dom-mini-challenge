@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+make sure the js script in html file contains defer, that tells the browser to load the rest of the file and get all the elements and then run the js file.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+elementvariable.style.color - style accesses the css
 ```
 ___________
 
@@ -71,7 +71,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+find element to update - document.querySelector('element') 
+(for id it would be'#idname' and for class it would be '.classname')
+save to variable, then queryselecet to specific attribute and save that to a variable, then update innertext (or src/alt for an image).
 ```
 ___________
 
