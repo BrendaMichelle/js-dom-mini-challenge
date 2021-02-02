@@ -1,7 +1,7 @@
 /***** Deliverable 1 *****/
 const header = document.querySelector("#header")
-// console.log(header)
-// console.log("Here's your header:", header)
+console.log(header)
+console.log("Here's your header:", header)
 
 
 /***** Deliverable 2 *****/
@@ -9,9 +9,8 @@ const header = document.querySelector("#header")
 header.style.color = "red"
 
 /***** Deliverable 3 *****/
-// console.log('This is what the traveler object looks like: ', traveler)
+console.log('This is what the traveler object looks like: ', traveler)
 const travelerDiv = document.querySelector(".traveler")
-console.log(travelerDiv)
 
 const travelerImg = travelerDiv.querySelector("img")
 travelerImg.src = traveler.photo
