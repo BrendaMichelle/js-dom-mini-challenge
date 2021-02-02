@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Added defer to the script tag in the HTML so that the webpage would load the the page in the proper order.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Changed the text color and bg color with the use of the header variable created earlier.
 ```
 ___________
 
@@ -71,7 +71,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+Added defer to the script tag in the HTML so that the webpage would load the the page in the proper order.
 
+Selected html locations and updated the contets with the apporate data from traveler.
 ```
 ___________
 
@@ -89,7 +91,9 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Select the ul location saved to a variable so that i can append the listed items to
+Select all elements of the list (li, p, img, link) and save to variable
+Once we select those tags we fill the contents with the relevant data dynamically
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +114,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Might be better practice to saved the selection to a variable then delete, but here I wanted to see if i could just appended the function onto the end of the selector.
 ```
