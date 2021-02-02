@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Add defer to the script tag so the script waits to execute until the DOM is loaded
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Use .style to change color using the css color attribute
 ```
 ___________
 
@@ -71,6 +71,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+data.js can be accessed in index.js because both are included using scripting tags in the same index.html file
+Use querySelector( "div#profile" ) to access the div tag with the id profile (id denoted with #), then get its child tags using querySelector( "img" ), querySelector( "h2" ) and querySelector( "em" )
 
 ```
 ___________
@@ -89,7 +91,9 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Use document.querySelector( "ul#animals" ) to get the unordered animal list
+Use document.createElement() to create a list item and a paragraph, image and anchor tag for the description, image and video link respectively, using dot notation to set each attribute appropriately
+Append the paragraph/image/anchor tags to the list item, then append the list item to the animal list tag
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +114,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Use document.querySelector( "li[data-id='3']" ) to find the element to remove, then remove it using remove()
 ```
