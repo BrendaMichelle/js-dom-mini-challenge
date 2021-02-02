@@ -47,6 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+defer in script for the .js
 
 ```
 ___________
@@ -57,7 +58,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+find elemct using .querySelect, and use .style.color to change color
 ```
 ___________
 
