@@ -114,5 +114,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-Use document.querySelector( "li[data-id='3']" ) to find the element to remove, then remove it using remove()
+Use document.querySelector( "li[data-id='3']" ) to find the element to remove, then remove it using remove()`
 ```
