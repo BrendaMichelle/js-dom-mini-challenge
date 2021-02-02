@@ -47,7 +47,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+i realized the code worked in the console so it must be something else, so i looked at the html file
+ans saw that the html file was rendering the javascript file before it renderd the body of the html 
 ```
 ___________
 
@@ -57,7 +58,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+  dom nodes are objects so they have many diffrent methods some of those being
+  ".style.color = 'color of choice' ", 
 ```
 ___________
 
@@ -89,7 +91,9 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+i first pulled the empty list from the dom and then created a forEach loop that 
+created an "li" for every animalSighting, then assigned the innerHTML of that newly created "li"
+with the seed data of the animal sighting 
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +114,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+i selected the element with the id of 3 and removed it 
 
 ```
