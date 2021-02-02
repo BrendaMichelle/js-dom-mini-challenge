@@ -61,9 +61,9 @@ traveler.animalSightings.forEach(sighting => {
 });
 
 /***** Deliverable 5 *****/
-const oopsies = document.querySelector("[data-id='3'")
-const parent = oopsies.parentElement 
-parent.removeChild(oopsies)
+const oopsies = document.querySelector("[data-id='3']")
+oopsies.remove()
+
 
 
 
@@ -91,5 +91,5 @@ const rotateRaffy = _ => {
   img.style.transition = "1s"
   const orig = "rotateY(0deg)"
   const spun = "rotateY(360deg)"
-  img.style.transform = img.style.transform === orig ? spun : orig
+  img.style.transform = img.style.transform !== spun ? spun : orig
 }
