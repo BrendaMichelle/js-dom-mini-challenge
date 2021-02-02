@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+This needed "defer" in the index.html
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+header.style.color -- this is manipulating css in the index.js file
 ```
 ___________
 
@@ -89,6 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+The terminalogy for "callback" is confusing me. It makes me think that a function must be previously defined in order to be accessed. 
 
 ```
 
@@ -110,5 +111,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+We weren't able to get rid of the bullet point. WHy is that?
 
 ```
