@@ -33,16 +33,16 @@ console.log('This is what the traveler object looks like: ', traveler)
 
 animals = document.querySelector('#animals')
 
-traveler.animalSightings.forEach(function(animals){
+traveler.animalSightings.forEach(function(animal){
     let li = document.createElement("li")
-    li.dataset.id = animals.id
+    li.dataset.id = animal.id
     let p = document.createElement('p')
     let img = document.createElement('img')
     let a = document.createElement('a')
-    a.href = animals.link
-    p.innerText = animals.description
-    img.src = animals.photo
-    img.alt = animals.species
+    a.href = animal.link
+    p.innerText = animal.description
+    img.src = animal.photo
+    img.alt = animal.species
     li.append(p)
     li.append(img)
     li.append(a)
