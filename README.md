@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Include defer in the script tags of the HTML header to ensure that the JS is not run before the HTML structure is defined.
 ```
 ___________
 
