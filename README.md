@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Added the defer so the script is called after DOM
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+We defined it, so do header.style, if you want to see all the options availible check console.dir(header.style). You added a shadow to make it look like 95 era Word clipart as well.
 ```
 ___________
 
@@ -71,6 +71,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+Traveler is in the data.js file which is then called as a script in the index header.
+I added ids to the objects to find them with query selector, I could also have done a query selector on the h2 img and em if I dind't care aobut it being for all h2's and whatever. I think. 
 
 ```
 ___________
@@ -89,7 +91,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Using the format from the lecture(non-artisinal) I for eached (iterated with a for each) my way through the animalSightings setting the outer element as a list item, then putting the three child classes in the inner html. 
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +112,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Couldn't Raffi have gotten the photo while it was on someone elses arm? I'm not sure I understand why this is obviously someone else's photo. Anywhoziles we do a search for the list item with an id of three then do variable.remove() remember the (). 
 ```
