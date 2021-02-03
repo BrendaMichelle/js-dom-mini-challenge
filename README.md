@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Adding "defer" after <script src="index.js" tells html to load everything else in the browser before running index.js. I think..?
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Find the header, defined as "header", then call .style.color on the header element, change color to "red", "orange", "green" etc.
 ```
 ___________
 
@@ -71,6 +71,18 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+I'm not sure why we have access to the traveler variable declared in data.js, but I think it might be because index.html calls both js files in script tags.
+
+*** These define which tags in the html doc that I'm manipulating and set them to variables ***
+const travelerPhoto = profile.querySelector("img")
+const travelerName = profile.querySelector("h2")
+const travelerNickname = profile.querySelector("em")
+
+*** These pull attributes from the traveler variable set in data.js and apply them to the variables I created above ***
+travelerPhoto.src = traveler.photo
+travelerPhoto.alt = "Traveler Photo"
+travelerNickname.textContent = traveler.nickname
+travelerName.textContent = traveler.name
 
 ```
 ___________
@@ -89,7 +101,28 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+traveler.animalSightings.forEach(animal =>  {
+    const newSighting = document.createElement("li")
+    newSighting.dataset.id = animal.id
+*** Associating each element from animalSightings with an id, so that we can retrieve further information about it from our stored data ***
 
+    const sightingDescription = document.createElement("p")
+    sightingDescription.textContent = animal.description
+*** Creating <p> tag in html, setting variable for the "description" attribute from our animalSightings array of objects. ***
+
+    const sightingImage = document.createElement("img")
+    sightingImage.src = animal.photo
+*** Creating <img> tag in html, setting variable for the "photo" attribute from our animalSightings array of objects. ***
+
+    const sightingLink = document.createElement("a")
+    sightingLink.href = animal.link 
+    sightingLink.textContent = `Here's a video about the ${animal.species} species!`
+*** Creating <a> tag in html, setting variable for the "link" attribute from our animalSightings array of objects, and creating an href link to another url. ***
+
+    newSighting.append(sightingDescription, sightingImage, sightingLink)
+    animalsUl.append(newSighting)
+*** Appending newSighting to our animalsUl from #animals id in html doc, appending the <p>, <img> and <a> tags to the newSighting <li> tag. ***
+})
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +143,8 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+const removeSighting = document.querySelector("li[data-id='3']")
+removeSighting.remove()
 
-```
+*** Find the animalSighting with id of 3 within our doc with the CSS Attribute Selector, remove sighting set to removeSighting variable from page by invoking .remove() ***
+``` 
