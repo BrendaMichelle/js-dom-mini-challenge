@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+I remembered Michelle going through and saying that the <script> index.js </script> file loads completely before continuing to load the HTML. That means that we have to either put in on the bottom of the body so it can access certain elements, or use the 'defer' keyword.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+We already have access to the header, so it's just a matter of adding 'style.color' because those CSS properties can be accessed through JS.
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+I got tripped up by a typo for way too long until I realized the 'Console' is the place that shows errors on the Chrome Dev Tools, not the 'Elements' tab. For this, I know the 'data.js' file is being loaded into the html along with the index.js and since we're manipulating the DOM (not HTML) that's why it can access the other file. But that doesn't sound too right.
 ```
 ___________
 
@@ -89,7 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+This was tough because the forEach is still a little fuzzy in my head. I got it so that it would only print the last one, and realized setting "animal.innerHTML = <etc>" was overriding each time it went through the loop. So I found online that you can do += instead to make sure it's adding each <li> element sequentially to the innerHTML. Hope that was a good solution.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +110,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+This one just took googling the syntax of how to query select [data-id] = 3. Then I had to remember to invoke the remove function with (). 
 ```
