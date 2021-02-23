@@ -47,6 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+Since index.js loaded before the h1 tag in the body, it couldn't define header. Adding a defer to line 9 in index.html solves the issue!
 
 ```
 ___________
@@ -57,6 +58,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+Easy peeasy! We defined header in the first deliverable, so all we need to do is add style.color . 
 
 ```
 ___________
@@ -71,6 +73,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+This one tripped me up. At first I thought I had to create a whole new, batch of HTML, which you can see in 'test.js'. After rereading the question i realized why it looked so wonky. So instead of creating the whole layout i set some variables to the different attributes i needed and grab the datat from data.js 
 
 ```
 ___________
@@ -89,6 +92,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+Since i did all that extra work for the third deliverable this one was a cake walk. I found where the data belongs and i iterated over the animalSightings array, plugging in the data where needed.
 
 ```
 
@@ -110,5 +114,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+Grabbing the right li was easy with querySelector, and using the remove method was even easier =)
 
 ```
