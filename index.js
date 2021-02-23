@@ -29,7 +29,7 @@ travelerImage.alt = traveler.name;
 
 /***** Deliverable 4 *****/
 
-traveler.animalSightings.forEach(function (animalSightings))
+traveler.animalSightings.forEach(function (animalSightings) {
     const li = document.createElement('li');
     li.dataset.id = animalSightings.id;
 
@@ -37,5 +37,6 @@ traveler.animalSightings.forEach(function (animalSightings))
     <img src="${animalSightings.photo}" alt="${animalSightings.species}"/>
     <a href="${animalSightings.link}" target="_blank">Here's a video about the ${animalSightings.species} species!</a>
   </li>`
+})
 
 /***** Deliverable 5 *****/
