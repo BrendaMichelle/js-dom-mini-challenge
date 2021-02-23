@@ -1,7 +1,9 @@
 /***** Deliverable 1 *****/
-const header = document.querySelector("#header")
+const header = document.querySelector('h1#header')
 console.log("Here's your header:", header)
 
+// I changed the argument for querySelector so that the h1 tag was included.
+// I also added defer attribute to the html file so that the the script file is executed only after the HTML file has loaded.
 
 /***** Deliverable 2 *****/
 
