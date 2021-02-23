@@ -46,7 +46,8 @@ Open the `index.html` file in your browser and check the console in Chrome Dev T
 Figure out what you need to change to give Javascript access to the `h1#header` element.
 
 **YOUR NOTES**
-```
+Since the javascript files were loaded before the body had finished loading, thus our const header variable returns null instead of the 
+h1#header element.
 
 ```
 ___________
@@ -56,7 +57,7 @@ ___________
 Now that you have access to the `h1#header` element, use Javascript to change the element's font color to your favorite color.
 
 **YOUR NOTES**
-```
+First we access to the variable const header, then we modify its style.color attribute.
 
 ```
 ___________
@@ -70,7 +71,8 @@ First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to
 Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
 
 **YOUR NOTES**
-```
+Since we have access to the traveler dictionary already in our index.js, we will grab the *name*, *nickname*, *photo* elements, then update
+their values accordingly in our index.js.
 
 ```
 ___________
@@ -88,7 +90,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 ```
 
 **YOUR NOTES**
-```
+First we will grab the ul element in our DOM, then we will loop through the traveler.animalSighting array to create each li elements.
 
 ```
 
@@ -109,6 +111,8 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 > Hint: You can use `querySelector` with [CSS Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) to find an element with a specific data-id. 
 
 **YOUR NOTES**
-```
+
+There're a few ways to remove the element: style.display = none/hidden; innerHTML = ""; or remove(). First we will grab the element with
+data-id='3', then we will remove it.
 
 ```
