@@ -47,6 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+In your index.html you have to use defer to make sure your script loads after your <body> does.
 
 ```
 ___________
@@ -57,7 +58,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+To change the color all you have to do is go into the variable you just made, go into it's stlye with dot notation, and go into it's color, then set that color equal to, =, the color you would like.
 ```
 ___________
 
@@ -71,7 +72,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+I believe you are able to access 'data.js' because it is called on before 'index.js' in the index.html head.
 
+As for updating, I selected the elements that I wanted to update and set them as variables, then I changed the innerText for the the ones that were just html, and for the image I changed the source and the alt by setting them equal to the object of traveler and using dot notation to select the attribute from traveler I needed.
 ```
 ___________
 
@@ -89,7 +92,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+So here I decided to use forEach on the array in traveler.animalSightings, so that at each index of the array it would make a new <li> element with a specific data-id, then for the innerHTML specified each value and before ending the iteration I appended the <ul> in the body by adding the list item we just created.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +113,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Trying to use querySelector to find the specific li was diffiult but then using the the css attribute selector was a big help. after I located the item all I had to do was use .remove() to remove it from the page.
 ```
