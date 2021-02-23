@@ -7,7 +7,9 @@ console.log("Here's your header:", header)
 
 /***** Deliverable 2 *****/
 
+header.style.color = 'red'
 
+// I just googled how to use JavaScript to alter an elements color, and this was the first solution that came up.
 
 /***** Deliverable 3 *****/
 // console.log('This is what the traveler object looks like: ', traveler)
