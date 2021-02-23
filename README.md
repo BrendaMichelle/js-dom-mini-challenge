@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+js file was reading before the html was. Need the js file to go below the body of the html text. 
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+calling innerHTML allows access into the html content. We need this to get the information of the traveler to show up that is listed in the index.HTML file. 
 ```
 ___________
 
