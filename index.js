@@ -21,21 +21,20 @@ const parentDiv = document.querySelector("div.traveler")
 parentDiv.prepend(div)
 
 // /***** Deliverable 4 *****/
-const li = document.createElement("li")
 
 
 traveler.animalSightings.forEach(function (animal){
-    li.innerHTML += `
-<li data-id="${animal.id}">
-  <p>${animal.description}</p>
-  <img src="${animal.photo}" alt="${animal.species}"/>
-  <a href="${animal.link}" target="_blank">Here's a video about the {animal sighting species} species!</a>
-</li>`
-
+  const li = document.createElement("li")
+    li.dataset.id = animal.id
+    li.innerHTML = `
+          <p>${animal.description}</p>
+          <img src="${animal.photo}" alt="${animal.species}"/>
+          <a href="${animal.link}" target="_blank">Here's a video about the ${animal.species} species!</a>`
+    const parentUl = document.querySelector("#animals")
+    parentUl.append(li)
 })
 
-const parentUl = document.querySelector("ul#animals")
-parentUl.prepend(li)
+
 
 /***** Deliverable 5 *****/
 
