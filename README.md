@@ -89,7 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+PUT BACKTICKS AT THE BEGINNGIN AND END OF THE LI TAGS.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +110,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+I ended up accessing the third element of the data-id array after banging my head against the wall trying to figure out the correvt syntax for queryselector.
 ```
