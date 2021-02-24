@@ -22,6 +22,19 @@ pic.src= traveler.photo
 
 /***** Deliverable 4 *****/
 
+const animal= createElement(`li`)
+
+traveler.animalSightings.forEach (function(sighting) {
+    animal.innerHTML += `<li data-id = "${sighting.id}">
+    <p>"${sighting.description}"</p>
+    <img src= "${sighting.photo}" alt= "${sighting.species}"/>
+    <a href="${sighting.link}" target="_blank">Here's a video about the "${sighting.species}" species!</a>
+  </li>`
+})
+
+const animalsU1 = document.querySelector('ul#animals');
+
+animalsUl.append(animal);
 
 
 /***** Deliverable 5 *****/
