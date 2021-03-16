@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+#1 index.js was called in the header section again so I moved it to the foot of the body section.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+in console I found the header checked to see what style options were available and picked a font and background color
 ```
 ___________
 
@@ -70,7 +70,9 @@ First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to
 Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
 
 **YOUR NOTES**
+
 ```
+I copied the profile block of code and used innerHTML to generalize the elements inside using ${} to interpolate the tags of each element
 
 ```
 ___________
