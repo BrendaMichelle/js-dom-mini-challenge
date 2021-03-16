@@ -13,13 +13,16 @@ header.style.color = "#7F6A7C"
 console.log('This is what the traveler object looks like: ', traveler)
 // const travelerDiv = document.querySelector('div.traveler')
 const profileDiv = document.querySelector('div#profile')
-image = document.getElementsByTagName('img')
-image[0].src = traveler.photo
-image[0].alt = traveler.name
-travelerName = document.getElementsByTagName('h2')
-travelerName[0].innerHTML = traveler.name
-travelerNickname = document.getElementsByTagName('em')
-travelerNickname[0].innerHTML = traveler.nickname
+
+const image = profileDiv.querySelector('img')
+image.src = traveler.photo
+image.alt = traveler.name
+
+travelerName = profileDiv.querySelector('h2')
+travelerName.innerHTML = traveler.name
+
+travelerNickname = profileDiv.querySelector('em')
+travelerNickname.innerHTML = traveler.nickname
 
 
 /***** Deliverable 4 *****/
