@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+since there is only one h1 tag you can call 'h1' in the querySelector. to get it to print in the console log you need to defer the script tags in the head of the html document so the script can run after the page has parsed.
 ```
 ___________
 
@@ -57,6 +57,8 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+call the header variable and do .style.color = 'blue'
+my favorite color because it's the color of the ocean 🌊
 
 ```
 ___________
@@ -71,6 +73,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+i got really stuck on this one and was unable to complete it/the rest of the deliverables 
+
 
 ```
 ___________
@@ -89,6 +93,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+followed along in review
 
 ```
 
@@ -110,5 +115,6 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+followed along in review
 
 ```
