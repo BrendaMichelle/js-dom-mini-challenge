@@ -102,6 +102,8 @@ in this case:
 
 Grab array from data.js and display each using forEach and helper function just written to create li elements. 
 
+(Just realized that this code isn't super reusable since I append specifically to the animals ul element inside of the addAnimal function...could be abstracted more!)
+
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
