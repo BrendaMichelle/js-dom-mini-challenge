@@ -18,6 +18,7 @@ travelerNickname.textContent = traveler.nickname
 
 const travelerPhoto = document.querySelector("#profile > img")
 travelerPhoto.src = traveler.photo
+travelerPhoto.alt = traveler.nickname
 
 /***** Deliverable 4 *****/
 
