@@ -47,7 +47,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+javascript hasnt finished rendering yet
+defer render 
 ```
 ___________
 
@@ -57,7 +58,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+whittle down to the color by dot notation/method chain
 ```
 ___________
 
@@ -71,7 +72,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+find the inner text, set that equal to the inner name attribute of the traveler
 ```
 ___________
 
