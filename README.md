@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Whenever you have to render the html, within the header of the index.html you specify in the script for the index.js to defer. this renders the body contents first before going through the script.
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Since we have the header selected already, we would just chose the style then iterate it to the coloe and assign the color you want.
 ```
 ___________
 
@@ -71,7 +71,7 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+Had to iterate using .children to find the specific element and transform it to the existing imae in the traveler data.js.(kudos to Henry for helping me for this one and the next deliverable)
 ```
 ___________
 
@@ -89,7 +89,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+Made variables that selected the element and iterated through the animalSightings in the traveler. From there created a fuction with an argument that had us enter the form as seen in the beginning of question 4.
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +110,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Find the data-id and using the same .children method in the third deliverable. I used .remove to remove it from the page
 ```
