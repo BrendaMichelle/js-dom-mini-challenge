@@ -52,3 +52,6 @@ renderAllAnimalsSighting()
 
 // console.log(animalSightings)
 /***** Deliverable 5 *****/
+const dataIdThree = document.querySelector("[data-id='3']")
+// console.log(dataIdThree)
+dataIdThree.remove()
