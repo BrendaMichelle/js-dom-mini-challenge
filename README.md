@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+The index.js file is being loaded before the element with id=header exists. Adding defer to the script line should help!
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Looking at a combination of the properties in console.dir(header) and google results, change the color property of the style attribute of header to a new color.
 ```
 ___________
 
@@ -71,7 +71,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
-
+Looked at DOM of the page and found traveler name to see where it should be (#profile > h2). 
+Assign variable to that element. Update!
+(Also changed traveler data to my furry roommate)
 ```
 ___________
 
@@ -89,6 +91,9 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+Create or find ul element with id of "animals". (It was given.)
+Create function (or start with pseudocode...) to create an li element for each animal in array. Used HTML in README to save time.
+Grab array and display each using forEach and helper function to create li elements.
 
 ```
 
@@ -110,5 +115,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-
+Use querySelector with quotes to find the intended property (minding using correct/different quotation marks, and putting "3" inside of them as well). Remove!
 ```

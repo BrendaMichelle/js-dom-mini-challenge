@@ -1,8 +1,8 @@
 const traveler = {
   id: 1,
-  name: "Raffy",
-  nickname: "Rafferty",
-  photo: "pics/raffy.jpg",
+  name: "Sara le Sqk",
+  nickname: "Sqkr Bkr",
+  photo: "pics/sqkrz.jpg",
   likes: 1000,
   animalSightings: [
     {
