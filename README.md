@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+We have to defer the loading of the JavaScript file in the browser until after the full html document has been loaded
 ```
 ___________
 
@@ -57,7 +57,19 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+we have to drill down to the color property by first accessing the element's style property:
+header{
+  ...
+  style: {
+    ...
+    color: ""
+    ...
+  }
+  ...
+}
+i.e.: someElement.style.color = "some color"
 
+IMPORTANT: aqua is not my favorite color
 ```
 ___________
 
@@ -71,6 +83,9 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+1. we have access to the traveller object because it is declared in the global scope of data.js
+2. select for the parent div containing the elements on the page that you desire to change and set to a variable
+3. set that div's inner html to a backticked string and write custom html, interpolating with 'traveler' properties where necessary
 
 ```
 ___________
@@ -89,7 +104,11 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-
+1. grab the parent ul tag with id of '#animals', set to a variable
+2. Iterate over list of animal sighting objects: traveler.animalSightings.forEach
+3. Within body of iteration, for each sighting, create a new 'li' element, set to a variable
+4. Set each line item's innerHTML to a backticked string containing appropriate HTML structure and interpolating where necessary
+5. As the last step to each iteration, append the new line item to the animalsList element 
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
