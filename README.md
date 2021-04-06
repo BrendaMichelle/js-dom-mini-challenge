@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-Looking at a combination of the properties in console.dir(header) and google results, change the color property of the style attribute of header to a new color.
+Looking at a combination of the properties in console.dir(header) and google results, figure out how to change the color property of the style attribute of header to a new color. In this case, just .style.color.
 ```
 ___________
 
@@ -72,8 +72,8 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 **YOUR NOTES**
 ```
 Looked at DOM of the page and found traveler name to see where it should be (#profile > h2). 
-Assign variable to that element. Update!
-(Also changed traveler data to my furry roommate)
+Assigned variable to that element. Updated each attributes, checked on data.js file to make sure I'm calling the right ones.
+(Also changed traveler data to my own furry roommate)
 ```
 ___________
 
@@ -91,9 +91,16 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
-Create or find ul element with id of "animals". (It was given.)
-Create function (or start with pseudocode...) to create an li element for each animal in array. Used HTML in README to save time.
-Grab array and display each using forEach and helper function to create li elements.
+Create or find ul element with id of "animals". (It was given...so check before making one next time.)
+Create function (or start with pseudocode...) to create an li element for each animal in array. Used HTML in README to save time. 
+
+in this case:
+- create li element
+- use given HTML template to update innerHTML value and insert dynamic values of a hypothetical animalObj
+- assign element id to animalObj.id
+- append the li element to the ul parent
+
+Grab array from data.js and display each using forEach and helper function just written to create li elements. 
 
 ```
 
@@ -115,5 +122,5 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
-Use querySelector with quotes to find the intended property (minding using correct/different quotation marks, and putting "3" inside of them as well). Remove!
+Use querySelector with quotes to find the intended property (minding using correct/different quotation marks, and putting "3" inside of them as well). Remove the centipede!
 ```
