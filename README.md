@@ -47,6 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
+added h1#
 
 ```
 ___________
