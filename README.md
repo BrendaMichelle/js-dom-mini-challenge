@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES:**
 The Javascript file was loaded before the HTML, so we could not target the header from `index.js`. In `index.html`, we need to change the script tag that is loading the Javascript file to the following:
-```
+```html
 <script src="index.js" defer></script>
 ```
 ___________
@@ -58,7 +58,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES:**
 To change font color, first access the `style` property, then change font color:
-```
+```js
 header.style.color = '#088F8F'
 ```
 ___________
@@ -71,9 +71,17 @@ First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to
 
 Using the `traveler` object, update the DOM to show the traveler's *name*, *nickname*, and *photo* in the appropriate places. For the `<img>` tag, make sure to update the `src` attribute *and* the `alt` attribute (it's important for accessibility).
 
-**YOUR NOTES**
-```
+**YOUR NOTES:**
+Identify in which element on the page we want to display our traveler information. Adjust each tag of this element to reference the `traveler` object and the respective properties.
+```js
+const profile = document.querySelector('div#profile')
+const travelerImg = profile.querySelector('img')
 
+travelerImg.src = traveler.photo
+travelerImg.alt = traveler.name
+
+profile.querySelector('h2').innerHTML = traveler.name
+profile.querySelector('em').innerHTML = traveler.nickname
 ```
 ___________
 
@@ -90,7 +98,7 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 ```
 
 **YOUR NOTES:** In the Dev Tools console, look at what `traveler.animalSightings` contains. Use the keys you see to make your HTML dynamic. To create a DOM element for each animal sighting, use the `forEach()` method on `traveler.animalSightings`. Within this method, target the unordered list on the page append the above HTML to this list.
-```
+```js
 traveler.animalSightings.forEach(
     function(sighting) {
         const unorderedList = document.querySelector('ul#animals')

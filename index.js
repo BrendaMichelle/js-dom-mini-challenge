@@ -8,7 +8,19 @@ header.style.color = '#088F8F'
 
 
 /***** Deliverable 3 *****/
-// console.log('This is what the traveler object looks like: ', traveler)
+console.log('This is what the traveler object looks like: ', traveler)
+const profile = document.querySelector('div#profile')
+const travelerImg = profile.querySelector('img')
+
+travelerImg.src = traveler.photo
+travelerImg.alt = traveler.name
+
+profile.querySelector('h2').innerHTML = traveler.name
+profile.querySelector('em').innerHTML = traveler.nickname
+
+
+
+/***** Deliverable 4 *****/
 traveler.animalSightings.forEach(
     function(sighting) {
         const unorderedList = document.querySelector('ul#animals')
@@ -21,9 +33,6 @@ traveler.animalSightings.forEach(
         unorderedList.innerHTML += animalSighting
     }
 )
-
-/***** Deliverable 4 *****/
-
 
 
 /***** Deliverable 5 *****/
