@@ -45,7 +45,7 @@ Open the `index.html` file in your browser and check the console in Chrome Dev T
 
 Figure out what you need to change to give Javascript access to the `h1#header` element.
 
-**YOUR NOTES**
+**YOUR NOTES:**
 The Javascript file was loaded before the HTML, so we could not target the header from `index.js`. In `index.html`, we need to change the script tag that is loading the Javascript file to the following:
 ```
 <script src="index.js" defer></script>
@@ -56,9 +56,10 @@ ___________
 
 Now that you have access to the `h1#header` element, use Javascript to change the element's font color to your favorite color.
 
-**YOUR NOTES**
+**YOUR NOTES:**
+To change font color, first access the `style` property, then change font color:
 ```
-
+header.style.color = '#088F8F'
 ```
 ___________
 

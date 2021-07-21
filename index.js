@@ -4,7 +4,7 @@ console.log("Here's your header:", header)
 
 
 /***** Deliverable 2 *****/
-
+header.style.color = '#088F8F'
 
 
 /***** Deliverable 3 *****/
