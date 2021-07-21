@@ -130,6 +130,7 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 > Hint: You can use `querySelector` with [CSS Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) to find an element with a specific data-id. 
 
 **YOUR NOTES**
-```
-
+```js
+const wrongTraveler = document.querySelector("[data-id='3']")
+wrongTraveler.remove()
 ```
