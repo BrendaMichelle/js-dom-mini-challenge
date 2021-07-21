@@ -12,8 +12,8 @@ console.log('This is what the traveler object looks like: ', traveler)
 
 document.querySelector("div#profile img").src = traveler.photo
 document.querySelector("div#profile img").alt = traveler.name
-document.querySelector("div#profile h2").innerText = traveler.name
-document.querySelector("div#profile em").innerText = traveler.nickname
+document.querySelector("div#profile h2").textContent = traveler.name
+document.querySelector("div#profile em").textContent = traveler.nickname
 
 
 /***** Deliverable 4 *****/
