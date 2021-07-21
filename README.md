@@ -46,8 +46,9 @@ Open the `index.html` file in your browser and check the console in Chrome Dev T
 Figure out what you need to change to give Javascript access to the `h1#header` element.
 
 **YOUR NOTES**
+The Javascript file was loaded before the HTML, so we could not target the header from `index.js`. In `index.html`, we need to change the script tag that is loading the Javascript file to the following:
 ```
-
+<script src="index.js" defer></script>
 ```
 ___________
 
