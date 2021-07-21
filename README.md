@@ -89,9 +89,20 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 </li>
 ```
 
-**YOUR NOTES**
+**YOUR NOTES:** In the Dev Tools console, look at what `traveler.animalSightings` contains. Use the keys you see to make your HTML dynamic. To create a DOM element for each animal sighting, use the `forEach()` method on `traveler.animalSightings`. Within this method, target the unordered list on the page append the above HTML to this list.
 ```
-
+traveler.animalSightings.forEach(
+    function(sighting) {
+        const unorderedList = document.querySelector('ul#animals')
+        const animalSighting = 
+            `<li data-id="${sighting.id}">
+                <p>${sighting.description}</p>
+                <img src="${sighting.photo}" alt="${sighting.species}"/>
+                <a href="${sighting.link}" target="_blank">Here's a video about the ${sighting.species} species!</a>
+            </li>`
+        unorderedList.innerHTML += animalSighting
+    }
+)
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
