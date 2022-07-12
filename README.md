@@ -47,7 +47,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+<script src="index.js" defer></script>
 ```
 ___________
 
@@ -57,7 +57,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+header.style.color = "green"
 ```
 ___________
 
@@ -71,6 +71,18 @@ Using the `traveler` object, update the DOM to show the traveler's *name*, *nick
 
 **YOUR NOTES**
 ```
+const travelerName = traveler.name;
+const travelerNickname = traveler.nickname;
+const travelerPhoto = traveler.photo;
+
+document.querySelector("body div.traveler div#profile h2").innerHTML = travelerName;
+console.log('This is what the traveler object looks like: ', travelerName)
+
+document.querySelector("body div.traveler div#profile em").innerHTML = travelerNickname;
+console.log('This is what the traveler object looks like: ', travelerNickname)
+
+document.querySelector("body div.traveler div#profile img").src = travelerPhoto;
+console.log('This is what the traveler object looks like: ', travelerPhoto)
 
 ```
 ___________
@@ -89,7 +101,29 @@ We also want to show some of the awesome animal sightings our traveler had. You'
 
 **YOUR NOTES**
 ```
+let array = traveler.animalSightings;
 
+let ul = document.getElementById("animals");
+
+for (i = 0; i < array.length; i++){
+    let animal = traveler.animalSightings[i];
+    let li = document.createElement("li");
+        let p = document.createElement("p");
+        p.innerHTML = animal.description;
+        li.appendChild(p);
+        ul.appendChild(li);
+
+    let img = document.createElement("img");
+    img.src = animal.photo;
+    li.appendChild(img);
+    ul.appendChild(li);
+
+    let a = document.createElement("a");
+    a.href = animal.link;
+    a.innerHTML = `Here's a video about the ${animal.species} species!`
+    li.appendChild(a);
+    ul.appendChild(li);
+    }
 ```
 
 **NOTE**: The `data-id` attribute is a custom property known as a "dataset attribute". They're useful for adding additional data to the DOM that doesn't have any effect on CSS of what the user sees - they're purely meant as tools for Javascript developers. We'll use this `data-id` attribute in the next deliverable.
@@ -110,5 +144,7 @@ Use Javascript to find the element with the `[data-id='3']` attribute, and *remo
 
 **YOUR NOTES**
 ```
+document.getElementById("animals").querySelector("li[id = '2']").remove()
 
+// comment: the id is 2 because of the way we setup the number of id list!
 ```
